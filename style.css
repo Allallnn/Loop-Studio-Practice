@@ -164,6 +164,7 @@ nav ul{
 }
 #interactive-mobile{
   display: block;
+  max-width: 100%;
 }
 #text-div{
   position: static;
