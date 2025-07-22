@@ -237,7 +237,7 @@ footer{
 #footer-div-2{
   display: flex;
   flex-direction: column;
-    border: 1px solid white;
+
     padding-top: 4rem;
 }
 #footer-div-2 p{
@@ -247,11 +247,18 @@ footer{
   padding-bottom: 1.5rem;
 }
 .footer-wrapper {
-  border: 1px solid white;
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 3rem;
+}
+#footer-div-2 img{
+  padding-left: 1rem;
+}
+footer #footer-div-2{
+  align-items: end;
+  margin-left: 31rem;
 }
 @media (max-width: 700px) {
   .container {
