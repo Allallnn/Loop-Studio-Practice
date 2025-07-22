@@ -41,7 +41,7 @@ nav {
   flex-wrap: wrap;
   padding: 60px 0;
 }
-nav ul {
+ ul {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -58,8 +58,7 @@ nav ul li {
   transition: color 0.3s ease;
   padding: 0.25rem 0;
 }
-
-nav ul li::after {
+ ul li::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -70,7 +69,7 @@ nav ul li::after {
   background-color: var(--White);
   transition: width 0.3s ease;
 }
-nav ul li:hover::after {
+ ul li:hover::after {
   width: 50%;
 }
 #immersive {
@@ -200,65 +199,58 @@ main {
 #the-grid {
   background-image: url(assets/desktop/Image20250607145124.jpg);
 }
-  #above-vr {
-    background-image: url(assets/desktop/Image20250607145111.jpg);
-  }
-  #above-vr p{
-    font-size: 1.5rem;
-  }
-  #pocket-borealis {
-    background-image: url(assets/desktop/Image20250607145121.jpg);
-  }
-  #the-curiosity {
-    background-image: url(assets/desktop/Image20250607145132.jpg);
-  }
-  #fisheye {
-    background-image: url(assets/desktop/Image20250607145129.jpg);
-  }
-  #mobile-btn{
-    display: none;
-  }
+#above-vr {
+  background-image: url(assets/desktop/Image20250607145111.jpg);
+}
+#above-vr p {
+  font-size: 1.5rem;
+}
+#pocket-borealis {
+  background-image: url(assets/desktop/Image20250607145121.jpg);
+}
+#the-curiosity {
+  background-image: url(assets/desktop/Image20250607145132.jpg);
+}
+#fisheye {
+  background-image: url(assets/desktop/Image20250607145129.jpg);
+}
+#mobile-btn {
+  display: none;
+}
+/* footer */
 footer{
   background-color: var(--Black);
-  display: flex;
-  margin: 0 auto;
-
-}
-#nav-2{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  flex-wrap: wrap;
   padding: 60px 0;
 }
-#nav-2 img{
-  padding-bottom: 1.5rem;
+#footer-logo-wrapper{
+  max-width: 200px;
+  padding-bottom: 20px;
 }
-#footer-div-2{
+#footer-logo-wrapper img{  
+  width: 100%;
+}
+#footer-inner{
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer-socials{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#footer-right{
   display: flex;
   flex-direction: column;
-
-    padding-top: 4rem;
-}
-#footer-div-2 p{
-  color: var(--Grey-200);
-}
-#footer-div-2 img{
-  padding-bottom: 1.5rem;
-}
-.footer-wrapper {
-
-  display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 3rem;
-}
-#footer-div-2 img{
-  padding-left: 1rem;
-}
-footer #footer-div-2{
-  align-items: end;
-  margin-left: 31rem;
+  gap: 34px;
+justify-content: space-between;
+color: var(--Grey-200);
+font-family: var(--ff-alata);
+font-weight: 400;
 }
 @media (max-width: 700px) {
   .container {
@@ -271,6 +263,9 @@ footer #footer-div-2{
   }
   nav ul {
     display: none;
+  }
+  #nav-2 ul {
+    display: block;
   }
   #hamburger-icon-container {
     display: block;
@@ -345,7 +340,7 @@ footer #footer-div-2{
   #above-vr {
     background-image: url(assets/mobile/Image20250607144956.jpg);
   }
-  #above-vr p{
+  #above-vr p {
     font-size: 1.3rem;
   }
   #pocket-borealis {
@@ -367,11 +362,31 @@ footer #footer-div-2{
     font-size: 1.5rem;
     padding-left: 0;
   }
-  #desktop-btn{
+  #desktop-btn {
     display: none;
   }
-  #mobile-btn{
+  #mobile-btn {
     display: block;
   }
-
+/* footer */
+#footer-inner{
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+}
+footer ul{
+  display: block;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer ul li{
+  padding-bottom: 14px;
+}
+ul li:hover::after{
+  width: 0;
+}
+#footer-socials{
+  display: flex;
+  justify-content: center;
+}
 }
